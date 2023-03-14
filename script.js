@@ -17,3 +17,18 @@
     $menu.classList.remove("is-active");
   });
 })(document);
+
+
+
+/*****color-background**
+function backColor(){
+
+ document.getElementsByClassName('.flex-container').style.backgroundColor ='#000';
+ document.getElementById('acerca').style.color='#fff';
+
+};****/
+const nocturno=document.querySelector('#modo-nocturno');
+nocturno.addEventListener('click', ()=> {
+document.body.classList.toggle('nocturno');
+nocturno.classList.toggle('active');
+});

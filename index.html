@@ -14,7 +14,7 @@
 
 <body>
   <header class="header">
-    <section class="container">
+    <div class="container">
       <div class="logo">
         <a href="index.html">Ezequiel Figueroa</a>
       </div>
@@ -34,7 +34,7 @@
         <a href="#experiencia">Experiencia</a>
         <a href="#contacto">Contacto</a>
       </nav>
-    </section>
+    </div>
   </header>
   <section id="inicio" class="home">
     <article class="hero-image">
@@ -49,6 +49,17 @@
       <h2 class="section-titular">Acerca de mí
 
       </h2>
+      <button id="modo-nocturno" class="modo-nocturno">
+      
+      <span class="icono"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+        <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+      </span>
+      <span class="icono1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-moon-fill" viewBox="0 0 16 16">
+        <path d="M11.473 11a4.5 4.5 0 0 0-8.72-.99A3 3 0 0 0 3 16h8.5a2.5 2.5 0 0 0 0-5h-.027z"/>
+        <path d="M11.286 1.778a.5.5 0 0 0-.565-.755 4.595 4.595 0 0 0-3.18 5.003 5.46 5.46 0 0 1 1.055.209A3.603 3.603 0 0 1 9.83 2.617a4.593 4.593 0 0 0 4.31 5.744 3.576 3.576 0 0 1-2.241.634c.162.317.295.652.394 1a4.59 4.59 0 0 0 3.624-2.04.5.5 0 0 0-.565-.755 3.593 3.593 0 0 1-4.065-5.422z"/>
+      </svg></span>
+      </button>
       <p><span class="parrafo parrafo-movil"> Hola, soy Ezequiel Figueroa. Mi experiencia laboral consiste en 20 años de
           supermercadismo. Ahora estoy complementando mí experiencia con la programación, la cual es algo que me
           apasiona. La idea de crear soluciones para mejorar la vida de las personas me causa gran
@@ -61,9 +72,9 @@
       <h2 class="section-titular">Mi Educación
       </h2>
       <p><span class="parrafo texto-movil"><i>2002</i> - Título Bachiller en Economía y Gestión</span></p>
-      <p><span class="parrafo texto-movil"><i>2005</i>- Ciclo de capacitaciones laborales en supermercadismo</span></p>
+      <p><span class="parrafo texto-movil"><i>2005</i> - Ciclo de capacitaciones laborales en supermercadismo</span></p>
       <p><span class="parrafo texto-movil"><i>2012</i> - Ciclo de capacitaciones laborales sobre liderazgo</span></p>
-      <p><span class="parrafo texto-movil"><i>2018</i> - Capacitación en idioma Ingles.</span></p>
+      <p><span class="parrafo texto-movil"><i>2018</i> - Capacitación en idioma Ingles</span></p>
     </div>
 
   </section>
@@ -124,7 +135,7 @@
 
     </article>
         
-          <form class="contact-form box-shadow-1">
+          <form onsubmit="alert('mensaje enviado correctamente!')" id="formulario" name ="formulario" class="contact-form box-shadow-1" >
           <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
           <textarea name="comments" cols="50" rows="10" placeholder="Déjame tus comentarios *" required></textarea>
